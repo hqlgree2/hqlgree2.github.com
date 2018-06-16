@@ -5,15 +5,22 @@
   
 
   
-  <title>an architecture a week from gree2</title>
+  <title>architecture scrapy | an architecture a week from gree2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="an architecture a week from gree2">
-<meta property="og:url" content="http://gree2.github.io/index.html">
+  <meta name="description" content="概览 数据流123456789引擎从爬虫获取初始化爬取请求引擎将请求发送给调度器进行调度并获取下一个爬取请求调度器返回下一个请求给引擎引擎通过下载器中间件发送请求给下载器一旦下载器完成一个页面的下载，生成一个应答通过下载器中间件给引擎引擎从下载器接收应答，并通过爬虫中间件发送给爬虫去处理爬虫处理应答并通过爬虫中间件返回解析条目以及新的请求给引擎引擎发送条目给条目流水线，然后发送请求给调度器，并获取">
+<meta name="keywords" content="downloader,engine,item,itempipline,request,response,scheduler,scrapy,spider">
+<meta property="og:type" content="article">
+<meta property="og:title" content="architecture scrapy">
+<meta property="og:url" content="http://gree2.github.io/2018/06/16/architecture-scrapy/index.html">
 <meta property="og:site_name" content="an architecture a week from gree2">
+<meta property="og:description" content="概览 数据流123456789引擎从爬虫获取初始化爬取请求引擎将请求发送给调度器进行调度并获取下一个爬取请求调度器返回下一个请求给引擎引擎通过下载器中间件发送请求给下载器一旦下载器完成一个页面的下载，生成一个应答通过下载器中间件给引擎引擎从下载器接收应答，并通过爬虫中间件发送给爬虫去处理爬虫处理应答并通过爬虫中间件返回解析条目以及新的请求给引擎引擎发送条目给条目流水线，然后发送请求给调度器，并获取">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://gree2.github.io/images/scrapy.png">
+<meta property="og:updated_time" content="2018-06-16T10:13:18.624Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="an architecture a week from gree2">
+<meta name="twitter:title" content="architecture scrapy">
+<meta name="twitter:description" content="概览 数据流123456789引擎从爬虫获取初始化爬取请求引擎将请求发送给调度器进行调度并获取下一个爬取请求调度器返回下一个请求给引擎引擎通过下载器中间件发送请求给下载器一旦下载器完成一个页面的下载，生成一个应答通过下载器中间件给引擎引擎从下载器接收应答，并通过爬虫中间件发送给爬虫去处理爬虫处理应答并通过爬虫中间件返回解析条目以及新的请求给引擎引擎发送条目给条目流水线，然后发送请求给调度器，并获取">
+<meta name="twitter:image" content="http://gree2.github.io/images/scrapy.png">
   
     <link rel="alternate" href="/atom.xml" title="an architecture a week from gree2" type="application/atom+xml">
   
@@ -62,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-architecture-scrapy" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-architecture-scrapy" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/16/architecture-scrapy/" class="article-date">
   <time datetime="2018-06-16T08:21:23.000Z" itemprop="datePublished">2018-06-16</time>
@@ -77,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/16/architecture-scrapy/">architecture scrapy</a>
+    <h1 class="article-title" itemprop="name">
+      architecture scrapy
     </h1>
   
 
@@ -151,57 +156,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/10/hello-world/" class="article-date">
-  <time datetime="2018-06-10T13:11:18.454Z" itemprop="datePublished">2018-06-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/hello-world/">hello world</a>
-    </h1>
+    <a href="/2018/06/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hello world</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>jekyll <a href="https://gree2.github.io/">https://gree2.github.io/</a><br>hexo <a href="https://hqlgree2.github.io/" target="_blank" rel="noopener">https://hqlgree2.github.io/</a></p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"hello world"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://gree2.github.io/2018/06/10/hello-world/" data-id="cjih8gbog0000ueu5qdlyamfd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
